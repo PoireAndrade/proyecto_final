@@ -72,7 +72,6 @@ void select2(){
   if (P==3){
     
     if (keyPressed){
-      
       if(key=='1'){
         //sopaM
         J2 = 6;

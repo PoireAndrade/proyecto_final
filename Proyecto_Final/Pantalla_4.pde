@@ -21,6 +21,7 @@ void pantalla4(){
   if(J1==1){
   pushMatrix();
   translate(95,100);
+  scale(s1);
   sopaM();
   popMatrix();
   }
@@ -28,6 +29,7 @@ void pantalla4(){
   if(J1==2){
   pushMatrix();
   translate(130,100);
+  scale(s1);
   lata();
   popMatrix();
   }
@@ -35,6 +37,7 @@ void pantalla4(){
   if(J1==3){
   pushMatrix();
   translate(-190,100);
+  scale(s1);
   plato();
   popMatrix();
   }
@@ -42,6 +45,7 @@ void pantalla4(){
   if(J1==4){
   pushMatrix();
   translate(105,100);
+  scale(s1);
   vaso();
   popMatrix();
   }
@@ -49,6 +53,7 @@ void pantalla4(){
   if(J1==5){
   pushMatrix();
   translate(85,100);
+  scale(s1);
   colilla();
   popMatrix();
   }
@@ -57,30 +62,35 @@ void pantalla4(){
   if(J2==6){
   pushMatrix();
   translate(610,100);
+  scale(s2);
   sopaM2();
   popMatrix();
   }
   if(J2==7){
   pushMatrix();
   translate(630,100);
+  scale(s2);
   lata2();
   popMatrix();
   }
   if(J2==8){
   pushMatrix();
   translate(610,100);
+  scale(s2);
   plato2();
   popMatrix();
   }
   if(J2==9){
   pushMatrix();
   translate(610,100);
+  scale(s2);
   vaso2();
   popMatrix();
   }
   if(J2==10){
   pushMatrix();
   translate(600,100);
+  scale(s2);
   colilla2();
   popMatrix();
   }
@@ -90,17 +100,29 @@ void pantalla4(){
     if (key=='c'){
       vida2 = vida2 - ataque1;
       turno=1;
-    }
-
+      s1=1;
   }
-  
+  else{
+    s1=1.10;
+  }
+  }
+   
   if(turno==1 && keyPressed){
     if (key=='m'){
       vida1 = vida1 - ataque2;
       turno=0;
-    }
-
+      s2=1;
   }
+  else{
+    s2=1.10;
+  }
+  }
+ 
+  
+  
+
+  
+  
   
   //Mostrar Vida
  
