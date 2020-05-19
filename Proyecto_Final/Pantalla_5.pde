@@ -113,8 +113,10 @@ void pantalla5(){
   if (keyPressed && key==' '){        //P=1,J1,J2,turno=0; float ataque1,ataque2,vida1,vida2;
     J1=0;
     J2=0;
-    ataque1=0;
-    ataque2=0;
+    ataque11=0;
+    ataque12=0;
+    ataque21=0;
+    ataque22=0;
     vida1=0;
     vida2=0;
     P=1;

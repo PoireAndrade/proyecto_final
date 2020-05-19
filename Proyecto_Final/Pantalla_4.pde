@@ -98,30 +98,36 @@ void pantalla4(){
   //Pelea. Turno 0=J1
   if(turno==0 && keyPressed){
     if (key=='c'){
-      vida2 = vida2 - ataque1;
+      vida2 = vida2 - ataque11;
       turno=1;
       s1=1;
-  }
-  else{
+    }
+    else{
     s1=1.10;
   }
+  if(key=='d'){
+    vida2= vida2 - ataque12;
+    turno=1;
+    s1=1;
+    }
   }
    
   if(turno==1 && keyPressed){
     if (key=='m'){
-      vida1 = vida1 - ataque2;
+      vida1 = vida1 - ataque21;
       turno=0;
       s2=1;
   }
-  else{
+    else{
     s2=1.10;
   }
+  if(key=='k'){
+    vida1= vida1 - ataque22;
+    turno=0;
+    s2=1;
+    }
   }
  
-  
-  
-
-  
   
   
   //Mostrar Vida
@@ -130,8 +136,10 @@ void pantalla4(){
   textFont(fontP1);  
   textSize(25);
   fill(50,50,50);
-  text("\nATAQUE CON: c",200,20);
-  text("\nATAQUE CON: m",680,20);
+  text("\nATAQUE PRINCIPAL: c",200,20);
+  text("\nATAQUE SECUNDARIO: d",200,45);
+  text("\nATAQUE PRINCIPAL: m",680,20);
+  text("\nATAQUE SECUNDARIO: k",680,45);
 
   textFont(fontP1);  
   textAlign(CENTER,CENTER);

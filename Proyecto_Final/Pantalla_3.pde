@@ -76,31 +76,36 @@ void select2(){
         //sopaM
         J2 = 6;
         vida2 = 50;
-        ataque2 = random(3);
+        ataque21 = random(3);
+        ataque22 = random(2);
       }
       if(key=='2'){
        //lata 
         J2 = 7;
         vida2 = 40;
-        ataque2 = random(4);
+        ataque21 = random(4);
+        ataque22 = random(3);
       }
       if(key=='3'){
         //plato
         J2 = 8;
         vida2 = 45;
-        ataque2 = random(3);
+        ataque12 = random(3);
+        ataque22 = random(2);
       }
       if(key=='4'){
         //vaso
         J2 = 9;
         vida2 = 45;
-        ataque2 = random(3);
+        ataque12 = random(3);
+        ataque22 = random(2);
       }
       if(key=='5'){
         //colilla
         J2 = 10;
         vida2 = 50;
-        ataque2 = random(2);
+        ataque22 = random(2);
+        ataque22 = random(3);
       }
     }
   } 

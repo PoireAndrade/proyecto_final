@@ -5,7 +5,7 @@ int tf=30,cf;
 int tl=0; 
 
 int P=1,J1,J2,turno=0;
-float ataque1,ataque2,vida1,vida2;
+float ataque11,ataque21,ataque12,ataque22,vida1,vida2;
 float s1,s2,s3,s4,s5,s6,s7,s8,s9,s10;
 int cc; //cambia color de fondo en pantalla 5
 
